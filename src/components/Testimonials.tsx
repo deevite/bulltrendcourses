@@ -43,6 +43,18 @@ const Testimonials = () => {
             </div>
           ))}
         </div>
+
+        {/* Кнопка Все отзывы */}
+        <div className="text-center mt-12">
+          <a
+            href="https://t.me/BullTrendNews" //
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-block px-6 py-3 bg-blue-600 text-white rounded-xl font-semibold hover:bg-blue-500 transition"
+          >
+            Все отзывы →
+          </a>
+        </div>
       </div>
     </section>
   );
