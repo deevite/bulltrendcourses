@@ -1,4 +1,4 @@
-import Rimport React, { useState } from 'react';
+import React, { useState } from 'react';
 import { ChevronDown, ChevronUp } from 'lucide-react';
 
 const Courses = () => {
@@ -14,7 +14,7 @@ const Courses = () => {
   };
 
   const courses = [
-    {
+        {
       id: 'basic',
       emoji: '💡',
       title: 'Базовый курс (старт 4 августа)',
