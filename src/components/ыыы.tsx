@@ -153,22 +153,6 @@ const Courses = () => {
         {
           title: '1. Стратегии',
           lessons: ['Стадии завершения коррекции', 'SUB|MNR|SUB торговля']
-        },
-        {
-          title: 'Дополнительные уроки премиум курса',
-          lessons: [
-            '1. Стадии завершения коррекции — MNR структура как цель, торговля коррекции, SUB|MNR|SUB торговля основного тренда',
-            '2. Инверсия имбаланса — inv как нарратив без слома структуры HTF, inv как инструмент для входа LTF',
-            '3. IDM — подтверждение зоны POI, внешний IDM|внутренний IDM',
-            '4. Аккумуляция Wycoff — наилучшие торговые фазы для построения стратегии, расширение по Wycoff',
-            '5. Дистрибьюция Wycoff — наилучшие торговые фазы для построения стратегии, расширение по Wycoff',
-            '6. Реаккумуляция Wycoff',
-            '7. Редистрибьюция Wycoff',
-            '8. Работа в мультифрактале — построение нарратива движения цены с помощью структуры рынка и Wycoff',
-            '9. Алгоритм поиска сетапа',
-            '10. Модель SMS — инверсия, SBOS, MBOS, IDM',
-            '11. Модель MSR — удержание OrderFlow, торговля докорреции'
-          ]
         }
       ]
     }
@@ -201,15 +185,13 @@ const Courses = () => {
                 <h3 className="text-2xl font-bold text-white mb-4">{course.title}</h3>
                 <div className="flex items-center justify-center gap-4 mb-4">
                   <span className="text-slate-400 line-through text-xl">{course.oldPrice}</span>
-                  <span
-                    className={`text-3xl font-bold ${
-                      index === 0
-                        ? 'text-green-400'
-                        : index === 1
-                        ? 'text-blue-400'
-                        : 'text-purple-400'
-                    }`}
-                  >
+                  <span className={`text-3xl font-bold ${
+                    index === 0
+                      ? 'text-green-400'
+                      : index === 1
+                      ? 'text-blue-400'
+                      : 'text-purple-400'
+                  }`}>
                     {course.newPrice}
                   </span>
                 </div>
